@@ -31,7 +31,7 @@
         .bg-slide {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             opacity: 0;
             transition: opacity 1s ease-in-out;
             z-index: -1;
@@ -39,7 +39,7 @@
 
         .bg-slide img {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             object-fit: cover;
             filter: blur(5px);
         }
@@ -61,7 +61,7 @@
         .slide {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             opacity: 0;
             z-index: -1;
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -69,8 +69,8 @@
 
         .slide img {
             width: 100%;
-            height: inherit;
-            object-fit: fill;
+            height: auto;
+            object-fit: contain;
         }
 
         .slide.active {
@@ -118,7 +118,7 @@
             background-position: center;
             filter: blur(3px);
             width: 100%;
-            height: 100%;
+            height: 100vh;
             position: absolute;
             top: 0;
             left: 0;
@@ -195,7 +195,7 @@
         @media only screen and (max-width: 900px) {
             .slider-container {
                 width: calc(100vw - 20px);
-                height: 30%;
+                height: 40%;
             }
             .banner h1{
                 font-size: 1em;
@@ -232,7 +232,7 @@
     </div>
     <!--Ảnh slide-->
 
-    <div class="slider-container" style="padding-bottom: 100px;">
+    <div class="slider-container" style="padding-bottom: 115px;">
         <div class="energy-bar"></div>
         <!--Thanh năng lượng-->
 
